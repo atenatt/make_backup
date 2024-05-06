@@ -18,3 +18,15 @@ Para executar o script de backup, basta executar o arquivo `backup_execution.sh`
 
 ```bash
 ./backup_execution.sh
+
+# Funcionalidades
+
+- **Verificação de Root**: O script verifica se está sendo executado como root antes de realizar o backup para garantir permissões adequadas.
+- **Envio por E-mail**: Se configurado, o script pode enviar o arquivo de backup por e-mail.
+
+# Cron Job (Agendamento)
+
+Se desejar agendar backups regularmente, você pode configurar um job no cron para executar o script de backup em intervalos definidos. Para fazer isso, adicione uma entrada no crontab:
+
+```bash
+0 2 * * * /caminho/para/backup_execution.sh

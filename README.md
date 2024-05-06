@@ -18,6 +18,7 @@ Para executar o script de backup, basta executar o arquivo `backup_execution.sh`
 
 ```bash
 ./backup_execution.sh
+```
 
 # Funcionalidades
 
@@ -30,3 +31,10 @@ Se desejar agendar backups regularmente, você pode configurar um job no cron pa
 
 ```bash
 0 2 * * * /caminho/para/backup_execution.sh
+```
+
+Esta entrada agendará o backup para ser executado todos os dias às 2h da manhã.
+
+# Licença 
+
+Este projeto esta licenciado sob a [MIT License]
